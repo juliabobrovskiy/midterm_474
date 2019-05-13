@@ -12,7 +12,8 @@
       .attr('height', 600);
 
     // d3.csv is basically fetch but it can be be passed a csv file as a parameter
-    d3.csv("../data/Seasons_SimpsonsData.csv")
+    d3.csv("./data/Seasons_SimpsonsData.csv")
+    //d3.csv("../data/Seasons_SimpsonsData.csv")
       .then((csvData) => makeHistogram(csvData));
   }
 
